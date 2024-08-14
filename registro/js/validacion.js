@@ -5,3 +5,21 @@ function showAlertSuccess() {
 function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
+
+
+document.getElementById("regBtn").addEventListener("click", function () {
+   
+    const password1 = document.getElementById("password1").value;
+    const password2 = document.getElementById("password2").value;
+    
+    
+    const mensaje = document.getElementById("mensaje");
+    
+    
+     if (password1 === password2) {
+     
+      mensaje.innerHTML = '<p class="text-success">Las contraseñas coinciden. Registro exitoso.</p>';
+    } else {
+      mensaje.innerHTML = '<p class="text-danger">Las contraseñas no coinciden. Intenta nuevamente.</p>';
+    }
+  });

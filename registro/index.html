@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-light">
-
+ <script src="../registro/js/validacion.js"></script>
   <div class="container">
     <main>
       <div class="row mt-4">
@@ -20,22 +20,24 @@
           <hr class="my-4">
           <div class="row g-3">
             <div class="col-sm-6">
-              <label for="nombre" class="form-label">Nombre</label>
+              <label for="nombre" class="form-label" required>Nombre</label>
               <input type="text" class="form-control" id="nombre">
             </div>
 
             <div class="col-sm-6">
-              <label for="apellido" class="form-label">Apellido</label>
+              <label for="apellido" class="form-label" required>Apellido</label>
               <input type="text" class="form-control" id="apellido">
             </div>
 
             <div class="col-12">
-              <label for="email" class="form-label">Email</label>
+              <label for="email" class="form-label" required>Email</label>
               <input type="email" class="form-control" id="email">
             </div>
 
             <div class="col-sm-6">
               <label for="password1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password1" minlength="6">
+              <label for="password1" class="form-label" required>Contraseña</label>
               <input type="password" class="form-control" id="password1" minlength="6">
             </div>
 
